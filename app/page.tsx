@@ -29,12 +29,12 @@ console.log("Session Data:", session);
     const [error, setError] = useState<string | null>(null);
 
     // 🛡️ CRITICAL LOGIC: Agar user already authenticated hai, toh turant root path '/' par redirect kar do.
-    useEffect(() => {
-        // Status 'authenticated' aate hi user ko Home Page (/) par bhej dega
-        if (status === "authenticated") {
-            router.push("/"); 
-        }
-    }, [status, router]); 
+    // useEffect(() => {
+    //     // Status 'authenticated' aate hi user ko Home Page (/) par bhej dega
+    //     if (status === "authenticated") {
+    //         router.push("/"); 
+    //     }
+    // }, [status, router]); 
 
     const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });

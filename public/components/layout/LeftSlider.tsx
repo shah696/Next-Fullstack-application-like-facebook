@@ -25,13 +25,13 @@ export default function LeftSlider() {
         onClick={handleProfileClick} // ✅ fixed
         className="flex items-center gap-3 cursor-pointer hover:bg-gray-200 p-2 rounded-lg"
       >
-        <Image
+        {/* <Image
           src="/profile.jpg"
           width={40}
           height={40}
           className="rounded-full"
           alt="profile"
-        />
+        /> */}
         <span className="font-semibold">{session?.user?.name || "User"}</span>
       </div>
 

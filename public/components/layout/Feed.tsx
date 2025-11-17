@@ -3,18 +3,18 @@ import Image from "next/image";
 
 export default function Feed() {
   return (
-    <div className="max-w-xl mx-auto">
+    <div className="max-w-full mx-auto">
 
       {/* Stories */}
       <div className="flex gap-3 overflow-x-auto pb-3">
         {[1,2,3,4,5].map((s) => (
           <div key={s} className="w-28 h-48 bg-gray-300 rounded-xl relative">
-            <Image
+            {/* <Image
               src={`/story${s}.jpg`}
               alt="story"
               fill
               className="object-cover rounded-xl"
-            />
+            /> */}
           </div>
         ))}
       </div>
@@ -50,13 +50,13 @@ export default function Feed() {
           
           {/* Post Header */}
           <div className="flex items-center gap-3 mb-3">
-            <Image
+            {/* <Image
               src="/profile.jpg"
               width={40}
               height={40}
               className="rounded-full"
               alt="profile"
-            />
+            /> */}
             <div>
               <h4 className="font-semibold">John Doe</h4>
               <span className="text-sm text-gray-500">2 hrs ago</span>
@@ -68,12 +68,12 @@ export default function Feed() {
 
           {/* Image */}
           <div className="w-full h-80 relative bg-gray-300 rounded-lg">
-            <Image
+            {/* <Image
               src={`/post${p}.jpg`}
               alt="post"
               fill
               className="object-cover rounded-lg"
-            />
+            /> */}
           </div>
 
           {/* Actions */}
